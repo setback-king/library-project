@@ -1,0 +1,151 @@
+html,
+body {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  margin: 0;
+  height: 100%;
+}
+
+.entireWrapper {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(79, 130, 172);
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--span {
+  margin-right: 30px;
+  font-size: 25px;
+}
+
+.newBook {
+  width: 200px;
+  border: 2px solid black;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, black 16%, tan 16%);
+  overflow-wrap: break-word;
+  display: flex;
+}
+
+.remove {
+  width: 90px;
+  align-self: center;
+  padding: 5px;
+  margin-top: 25px;
+  margin-left: 30px;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgb(241, 105, 105);
+  margin-bottom: 30px;
+}
+
+.greenButton {
+  width: 90px;
+  align-self: center;
+  padding: 5px;
+  margin-top: 25px;
+  margin-left: 30px;
+  text-align: center;
+  font-size: 15px;
+  background-color: lightgreen;
+}
+
+.redButton {
+  width: 90px;
+  align-self: center;
+  padding: 5px;
+  margin-top: 25px;
+  margin-left: 30px;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgb(228, 218, 81);
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.addBook {
+  margin: 40px;
+  height: 60px;
+  width: 100px;
+}
+
+.bookContainer {
+  margin: 30px;
+}
+
+.bookData {
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  flex: 1;
+  height: 100%;
+}
+
+.textInput {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 20px;
+  font-size: 20px;
+}
+
+input[type="checkbox"] {
+  align-self: center;
+}
+
+.bookInfo {
+  font-size: 20px;
+  margin-top: 12px;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+
+.btn {
+  width: 120px;
+  height: 60px;
+  align-self: center;
+  background-color: lightgreen;
+}
+
+.footer {
+  background-color: rgb(79, 130, 172);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.smallContainer {
+  display: flex;
+  flex: 1;
+}

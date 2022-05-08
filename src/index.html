@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+      <title>Library Project</title>
+    </head>
+
+    <body>
+      <div class="entireWrapper">
+        <div class="header">
+          <h1>Library Storage</h1>
+          <span class="header--span">Sign In</span>
+        </div>
+        <div class="container">
+          <div class="smallContainer">
+            <div class="bookData">
+              <h2>Book Details:</h2>
+
+              <form id="formInput" method="post">
+                <div class="textInput">
+                  <label for="title">Title:</label>
+                  <input
+                    type="text"
+                    name="title"
+                    id="title"
+                    required
+                    minlength="8"
+                  />
+                </div>
+                <div class="textInput">
+                  <label for="author">Author:</label>
+                  <input type="text" name="author" id="author" required />
+                </div>
+                <div class="textInput">
+                  <label for="pages">Pages:</label>
+                  <input
+                    type="number"
+                    name="pages"
+                    id="pages"
+                    required
+                    min="10"
+                    max="20"
+                  />
+                </div>
+                <div class="textInput">
+                  <label for="read">Read?</label>
+                  <div class="check">
+                    <label for="read1">Yes:</label>
+                    <input
+                      type="checkbox"
+                      name="read1"
+                      id="read1"
+                      value="Yes"
+                    />
+                  </div>
+                  <div class="check">
+                    <label for="read2">No:</label>
+                    <input type="checkbox" name="read2" id="read2" value="No" />
+                  </div>
+                </div>
+                <div class="textInput">
+                  <button class="btn">Add Book</button>
+                </div>
+              </form>
+            </div>
+            <div class="bookContainer">
+              <div id="firebaseui-auth-container"></div>
+              <div id="loader">Loading...</div>
+              <div class="books"></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">Created by Setback King ♛ 2021</div>
+      </div>
+
+      <script src="/main.js"></script>
+    </body>
+  </html>
+</html>
