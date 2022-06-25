@@ -14,7 +14,6 @@
       <div class="entireWrapper">
         <div class="header">
           <h1>Library Storage</h1>
-          <span class="header--span">Sign In</span>
         </div>
         <div class="container">
           <div class="smallContainer">
@@ -24,13 +23,7 @@
               <form id="formInput" method="post">
                 <div class="textInput">
                   <label for="title">Title:</label>
-                  <input
-                    type="text"
-                    name="title"
-                    id="title"
-                    required
-                    minlength="8"
-                  />
+                  <input type="text" name="title" id="title" required />
                 </div>
                 <div class="textInput">
                   <label for="author">Author:</label>
@@ -38,14 +31,7 @@
                 </div>
                 <div class="textInput">
                   <label for="pages">Pages:</label>
-                  <input
-                    type="number"
-                    name="pages"
-                    id="pages"
-                    required
-                    min="10"
-                    max="20"
-                  />
+                  <input type="number" name="pages" id="pages" required />
                 </div>
                 <div class="textInput">
                   <label for="read">Read?</label>
@@ -69,8 +55,6 @@
               </form>
             </div>
             <div class="bookContainer">
-              <div id="firebaseui-auth-container"></div>
-              <div id="loader">Loading...</div>
               <div class="books"></div>
             </div>
           </div>
@@ -78,7 +62,7 @@
         <div class="footer">Created by Setback King ♛ 2021</div>
       </div>
 
-      <script src="/main.js"></script>
+      <script src="../dist/main.js"></script>
     </body>
   </html>
 </html>
